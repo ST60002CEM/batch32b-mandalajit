@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:recipe/features/home/presentation/view/bottom_view/dashboard_view.dart';
-import 'package:recipe/features/home/presentation/view/bottom_view/profile_view.dart';
 
 class HomeView extends ConsumerStatefulWidget {
   const HomeView({super.key});
@@ -11,42 +9,38 @@ class HomeView extends ConsumerStatefulWidget {
 }
 
 class _HomeViewState extends ConsumerState<HomeView> {
-  int selectedIndex = 0;
-  List<Widget> lstScreen = [
-    const DashboardView(),
-    // const CourseView(),
-    // const BatchView(),
-    const ProfileView(),
+  int _selectedIndex = 0;
+  List<Widget> lstBottomScreen = [
+    const Center(child: Text("Dashboard")),
+    const Center(child: Text("Profile"))
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: lstScreen[selectedIndex],
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text("FundNepal"),
+      ),
+      body: lstBottomScreen[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType
+            .fixed, // it will fix the issue if we add 4 items
+        backgroundColor: Colors.greenAccent,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.dashboard),
             label: 'Dashboard',
+            icon: Icon(Icons.dashboard),
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.book),
-            label: 'Course',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.batch_prediction),
-            label: 'Batch',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-          ),
+          BottomNavigationBarItem(label: 'Profile', icon: Icon(Icons.person_2)),
         ],
-        currentIndex: selectedIndex,
+        currentIndex: _selectedIndex,
         onTap: (index) {
-          setState(() {
-            selectedIndex = index;
-          });
+          setState(
+                () {
+              _selectedIndex = index;
+            },
+          );
         },
       ),
     );
