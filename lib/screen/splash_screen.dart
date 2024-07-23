@@ -1,5 +1,4 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -41,14 +40,14 @@ class _SplashScreenState extends State<SplashScreen> {
           text: TextSpan(
             children: [
               TextSpan(
-                text: 'food',
+                text: 'recipe',
                 style: TextStyle(
                   fontSize: 30,
                   color: Colors.black,
                 ),
               ),
               TextSpan(
-                text: 'recipe',
+                text: 'food',
                 style: TextStyle(
                   fontSize: 30,
                   color: Colors.orange,
