@@ -42,7 +42,7 @@ class RegisterScreen extends StatelessWidget {
           children: [
             SizedBox(height: 50), // Add some spacing from the top
             Text(
-              "Hi!",
+              "Create an account",
               textAlign: TextAlign.left,
               style: TextStyle(
                 fontSize: 40,
@@ -54,7 +54,7 @@ class RegisterScreen extends StatelessWidget {
               height: 5,
             ),
             Text(
-              "Create new account",
+              "Welcome!Please enter your details.",
               style: TextStyle(
                 fontSize: 22,
                 color: Color(0xFF946E54),
