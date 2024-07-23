@@ -33,7 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               TextSpan(
-                text: '',
+                text: 'Food',
                 style: TextStyle(
                   fontSize: 20,
                   color: Colors.orange,
