@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class DashBoardScreen extends StatefulWidget {
@@ -46,15 +45,12 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
             height: 220,
             decoration: BoxDecoration(
               image: const DecorationImage(
-                  image: AssetImage(
-                      "assets/images/dashboard_image.png",
-                  ),
+                image: AssetImage("assets/images/dashboard_image.png"),
                 fit: BoxFit.cover,
               ),
             ),
             child: Column(
               children: [
-                Spacer(),
                 SizedBox(height: 16), // Adds some padding from the top
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16.0),
@@ -71,11 +67,11 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
                     ),
                   ),
                 ),
+                Spacer(),
                 SizedBox(height: 80),
               ],
             ),
           ),
-
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -94,7 +90,6 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
             label: 'Cart',
           ),
         ],
-
       ),
     );
   }
