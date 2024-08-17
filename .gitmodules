@@ -1,0 +1,3 @@
+[submodule "batch32b-mandalajit"]
+	path = batch32b-mandalajit
+	url = https://github.com/ST60002CEM/batch32b-mandalajit.git
