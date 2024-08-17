@@ -30,14 +30,14 @@ class CustomDrawer extends ConsumerWidget {
                 ),
                 SizedBox(height: 10),
                 Text(
-                  'John Doe',
+                  'Ajit Mandal',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
                   ),
                 ),
                 Text(
-                  'johndoe@example.com',
+                  'mandalajit7878@.com',
                   style: TextStyle(
                     color: Colors.white70,
                     fontSize: 14,
@@ -83,10 +83,10 @@ class CustomDrawer extends ConsumerWidget {
             leading: const Icon(Icons.logout),
             title: const Text('Logout'),
             onTap: () {
-            /*  Navigator.pushReplacement(
+              Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => const LoginScreen()),
-              );*/
+              );
               // Handle logout
             },
           ),
