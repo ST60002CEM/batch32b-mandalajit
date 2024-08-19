@@ -1,9 +1,6 @@
 # recipes.
 - Simple Flutter App for Cocktails and Drinks Recipes.
 
-## Architecture.
-- Clean Architecture with structure similar to `DDD` Using Riverpod and Freezed.
-
 ## ScreenShots
 
 <p float="left">
